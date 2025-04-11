@@ -1,0 +1,40 @@
+{
+  "name": "skysculptinnovations",
+  "version": "1.0.0",
+  "description": "SkySculpt Innovations website showcasing premium drone services for real estate, construction, 3D mapping, and agriculture.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"No tests specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkySculptInnovations/SkySculptInnovations.git"
+  },
+  "keywords": [
+    "drone",
+    "services",
+    "inspection",
+    "construction",
+    "real estate",
+    "aerial",
+    "photography",
+    "3d",
+    "mapping",
+    "precision",
+    "farming"
+  ],
+  "author": "Jon Moynihan",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/SkySculptInnovations/SkySculptInnovations/issues"
+  },
+  "homepage": "https://github.com/SkySculptInnovations/SkySculptInnovations#readme",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "express": "^4.17.1",
+    "nodemailer": "^6.9.0",
+    "dotenv": "^16.0.0",
+    "helmet": "^6.0.0"
+  }
+}

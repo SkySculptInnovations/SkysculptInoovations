@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Request Appointment | SkySculpt Innovations</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous"/>
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <img src="logodesigns/logo4.png" alt="SkySculpt Innovations Banner" class="banner-logo"/>
+    </div>
+    <nav class="main-nav">
+      <div class="nav-container">
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services-pricing.html">Services & Pricing</a></li>
+          <li><a href="loyalty.html">Incentives</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="request-appointment.html">Request Appointment</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" style="margin-top:80px;">
+    <h1>Request an Appointment</h1>
+    <p>
+      Ready to elevate your project? Fill out the form below for a personalized consultation or to request a quote.
+    </p>
+  </section>
+
+  <main class="content-block">
+    <form id="contact-form" action="/submit-form" method="POST" style="max-width:600px; margin:auto; text-align:left;">
+      <h2>Appointment Request</h2>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Project Details or Availability:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <!-- reCAPTCHA widget -->
+      <div class="g-recaptcha" data-sitekey="6Ld5FBErAAAAAAMBbS4TTT8QxFuEzAuMDcxDTLAA" data-action="submit"></div>
+      
+      <button type="submit">Submit Request</button>
+    </form>
+  </main>
+
+  <div class="bottom-banner">
+    <img src="logodesigns/logo4.png" alt="SkySculpt Innovations Banner"/>
+  </div>
+  <footer>
+    <div class="footer-social">
+      <ul>
+        <li><a href="https://instagram.com/skysculptinnovations" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://facebook.com/SkySculptInnovations" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://threads.net/skysculptinnovations" target="_blank"><i class="fas fa-comments"></i></a></li>
+      </ul>
+    </div>
+    <p>&copy; 2025 SkySculpt Innovations. All rights reserved.</p>
+    <a href="request-appointment.html" class="contact-btn">Request Appointment</a>
+  </footer>
+</body>
+</html>
+
